@@ -10,7 +10,7 @@ public class ConfigCommand implements Runnable{
 	@Override
 	public void run(){
 		// 获取MainTemplateConfig类的所有字段
-		Field[] fields = ReflectUtil.getFields(com.yupi.model.DataModel.class);
+		Field[] fields = ReflectUtil.getFields(com.yupi.maker.model.DataModel.class);
 		// 遍历并打印每个字段的信息
 		for(Field field : fields){
 			System.out.println("字段类型"+field.getType());

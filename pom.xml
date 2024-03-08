@@ -60,7 +60,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.yupi.Main</mainClass> <!-- 替换为主类的完整类名 -->
+                            <mainClass>com.yupi.maker.Main</mainClass> <!-- 替换为主类的完整类名 -->
                         </manifest>
                     </archive>
                 </configuration>
