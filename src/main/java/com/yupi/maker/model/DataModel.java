@@ -3,7 +3,7 @@ package com.yupi.maker.model;
 import lombok.Data;
 
 /**
- * 静态模板配置
+ * 动态模板配置
  */
 @Data
 public class DataModel {
