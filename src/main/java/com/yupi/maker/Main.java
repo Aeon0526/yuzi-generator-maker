@@ -1,6 +1,6 @@
 package com.yupi.maker;
 
-import com.yupi.maker.cli.CommandExecutor;
+//import com.yupi.maker.cli.CommandExecutor;
 
 public class Main {
 	public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class Main {
 //		args = new String[]{"list"};
 
 
-		CommandExecutor commandExecutor = new CommandExecutor();
-		commandExecutor.doExecute(args);
+//		CommandExecutor commandExecutor = new CommandExecutor();
+//		commandExecutor.doExecute(args);
 	}
 }
