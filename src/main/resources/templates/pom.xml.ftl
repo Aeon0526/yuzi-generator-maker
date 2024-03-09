@@ -60,7 +60,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>${basePackage}.maker.Main</mainClass> <!-- 替换为主类的完整类名 -->
+                            <mainClass>${basePackage}.Main</mainClass> <!-- 替换为主类的完整类名 -->
                         </manifest>
                     </archive>
                 </configuration>

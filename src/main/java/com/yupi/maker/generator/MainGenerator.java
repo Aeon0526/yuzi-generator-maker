@@ -33,7 +33,7 @@ public class MainGenerator {
 		// com/yupi
 		String outputBasePackagePath = StrUtil.join("/", StrUtil.split(outputBasePackage, "."));
 		// generated/src/main/java/com/yupi
-		String outputBaseJavaPackagePath = outputPath + File.separator + "src/main/java" + outputBasePackagePath;
+		String outputBaseJavaPackagePath = outputPath + File.separator + "src/main/java/" + outputBasePackagePath;
 
 		String inputFilePath;
 		String outputFilePath;
@@ -90,5 +90,11 @@ public class MainGenerator {
 
 		// 构建 jar 包
 		JarGenerator.doGenerate(outputPath);
+
+		// 封装脚本
+		String shellOutputFilePath = outputPath + File.separator + "generator";
+		String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
+		String jarPath = "target/" + jarName;
+		ScriptGenerator.doGenerate(shellOutputFilePath, jarPath);
 	}
 }
