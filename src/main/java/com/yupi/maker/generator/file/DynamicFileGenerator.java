@@ -38,12 +38,6 @@ public class DynamicFileGenerator {
 		String templateName = new File(inputPath).getName();
 		Template template = configuration.getTemplate(templateName);
 
-		// 创建数据模型
-		com.yupi.maker.model.DataModel dataModel = new com.yupi.maker.model.DataModel();
-		dataModel.setAuthor("yupi");
-		dataModel.setLoop(false);
-		dataModel.setOutputText("求和结果：");
-
 		// 如果文件不存在，则创建文件和父目录
 		if(!FileUtil.exist(outputPath)){
 			FileUtil.touch(outputPath);
