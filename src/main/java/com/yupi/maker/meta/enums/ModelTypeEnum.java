@@ -11,6 +11,7 @@ public enum ModelTypeEnum {
     private final String text;
 
     private final String value;
+
     ModelTypeEnum(String text, String value) {
         this.text = text;
         this.value = value;

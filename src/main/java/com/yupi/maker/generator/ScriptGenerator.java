@@ -14,7 +14,6 @@ import java.util.Set;
 public class ScriptGenerator {
 
     public static void doGenerate(String outputPath, String jarPath) throws IOException {
-
         // 直接写入脚本文件
         // linux
         StringBuilder sb = new StringBuilder();
@@ -26,7 +25,7 @@ public class ScriptGenerator {
             Set<PosixFilePermission> permissions = PosixFilePermissions.fromString("rwxrwxrwx");
             Files.setPosixFilePermissions(Paths.get(outputPath), permissions);
         } catch (Exception e) {
-            
+
         }
 
         // windows

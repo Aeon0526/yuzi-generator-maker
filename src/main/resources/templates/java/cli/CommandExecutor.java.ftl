@@ -7,18 +7,18 @@ import picocli.CommandLine;
 import picocli.CommandLine.Command;
 
 /**
-* 命令执行器
-*/
+ * 命令执行器
+ */
 @Command(name = "${name}", mixinStandardHelpOptions = true)
 public class CommandExecutor implements Runnable {
 
     private final CommandLine commandLine;
 
     {
-    commandLine = new CommandLine(this)
-    .addSubcommand(new GenerateCommand())
-    .addSubcommand(new ConfigCommand())
-    .addSubcommand(new ListCommand());
+        commandLine = new CommandLine(this)
+                .addSubcommand(new GenerateCommand())
+                .addSubcommand(new ConfigCommand())
+                .addSubcommand(new ListCommand());
     }
 
     @Override
@@ -28,11 +28,11 @@ public class CommandExecutor implements Runnable {
     }
 
     /**
-    * 执行命令
-    *
-    * @param args
-    * @return
-    */
+     * 执行命令
+     *
+     * @param args
+     * @return
+     */
     public Integer doExecute(String[] args) {
         return commandLine.execute(args);
     }

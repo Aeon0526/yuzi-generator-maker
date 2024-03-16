@@ -3,27 +3,23 @@ package com.yupi.maker.model;
 import lombok.Data;
 
 /**
- * 动态模板配置
+ * 动态模版配置
  */
 @Data
 public class DataModel {
 
-	// 1. 开头增加作者 @author 注释（增加代码）
-	// 2. 修改程序输出的信息提示（替换代码）
-	// 3. 将循环读取输入改为单次读取（可选代码）
+    /**
+     * 是否生成循环
+     */
+    private boolean loop;
 
-	/**
-	 * 作者(字符串填充值)
-	 */
-	private String author = "yupi";
+    /**
+     * 作者注释
+     */
+    private String author = "yupi";
 
-	/**
-	 * 输出信息
-	 */
-	private String outputText = "sum = ";
-
-	/**
-	 * 是否循环(开关)
-	 */
-	private boolean loop;
+    /**
+     * 输出信息
+     */
+    private String outputText = "sum = ";
 }
