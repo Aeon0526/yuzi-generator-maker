@@ -1,6 +1,7 @@
 ###Coustom Template
 
 .idea
+.temp
 yuzi-generator.iml
 yuzi-generator-basic.iml
 
