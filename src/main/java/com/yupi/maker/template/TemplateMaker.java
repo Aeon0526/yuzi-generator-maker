@@ -188,7 +188,7 @@ public class TemplateMaker {
 		// 替换变量（第二次）
 		String searchStr = "BaseResponse";
 
-		long id = makeTemplate(meta, originProjectPath, inputFilePathList, modelInfo, searchStr, 1735281524670181376L);
+		long id = makeTemplate(meta, originProjectPath, inputFilePathList, modelInfo, searchStr, null);
 		System.out.println(id);
 	}
 
