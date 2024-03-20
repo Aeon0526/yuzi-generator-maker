@@ -29,8 +29,8 @@ public class MainGenerator {
      * @throws IOException
      */
     public static void doGenerate(DataModel model) throws TemplateException, IOException {
-        String inputRootPath = "<#noparse>${fileConfig.inputRootPath}</#noparse>";
-        String outputRootPath = "<#noparse>${fileConfig.outputRootPath}</#noparse>";
+        String inputRootPath = "${fileConfig.inputRootPath}";
+        String outputRootPath = "${fileConfig.outputRootPath}";
 
         String inputPath;
         String outputPath;

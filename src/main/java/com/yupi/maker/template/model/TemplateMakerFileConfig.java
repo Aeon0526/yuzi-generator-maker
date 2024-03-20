@@ -8,26 +8,26 @@ import java.util.List;
 @Data
 public class TemplateMakerFileConfig {
 
-	private List<FileInfoConfig> files;
+    private List<FileInfoConfig> files;
 
-	private FileGroupConfig fileGroupConfig;
+    private FileGroupConfig fileGroupConfig;
 
-	@NoArgsConstructor
-	@Data
-	public static class FileInfoConfig {
+    @NoArgsConstructor
+    @Data
+    public static class FileInfoConfig {
 
-		private String path;
+        private String path;
 
-		private List<FileFilterConfig> filterConfigList;
-	}
+        private List<FileFilterConfig> filterConfigList;
+    }
 
-	@Data
-	public static class FileGroupConfig {
+    @Data
+    public static class FileGroupConfig {
 
-		private String condition;
+        private String condition;
 
-		private String groupKey;
+        private String groupKey;
 
-		private String groupName;
-	}
+        private String groupName;
+    }
 }

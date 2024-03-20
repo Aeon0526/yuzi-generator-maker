@@ -4,7 +4,7 @@
 >
 > 作者：${author}
 >
-> 基于 [孙浩](https://www.feishu.cn/invitation/page/add_contact/?token=9b5q5de2-0908-42bb-bf3a-edbee391f251&amp;unique_id=6LfmwvcntYx52feb1lGHBg==) 的 [鱼籽代码生成器项目](https://github.com/Aeon0526/yuzi-generator) 制作，感谢您的使用！
+> 基于 [程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah) 的 [鱼籽代码生成器项目](https://github.com/liyupi/yuzi-generator) 制作，感谢您的使用！
 
 可以通过命令行交互式输入的方式动态生成想要的项目代码
 
