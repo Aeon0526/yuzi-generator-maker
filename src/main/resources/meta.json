@@ -8,7 +8,7 @@
   "fileConfig": {
     "inputRootPath": ".source/acm-template-pro",
     "outputRootPath": "generated",
-    "sourceRootPath": "E:/Planet/yuzi-generator/yuzi-generator-demo-projects/acm-template-pro",
+    "sourceRootPath": "C:/code/yuzi-generator/yuzi-generator-demo-projects/acm-template-pro",
     "type": "dir",
     "files": [
       {
